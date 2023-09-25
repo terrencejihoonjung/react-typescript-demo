@@ -1,7 +1,9 @@
-// import Greet from "./components/Greet";
+import Greet from "./components/Greet";
 // import Person from "./components/Person";
 // import PersonList from "./components/PersonList";
 import Status from "./components/Status";
+import Heading from "./components/Heading";
+import Oscar from "./components/Oscar";
 
 function App() {
   // const personName = {
@@ -18,6 +20,11 @@ function App() {
   return (
     <div>
       <Status status={"success"} />
+      <Oscar>
+        <Heading>Placeholder text</Heading>
+      </Oscar>
+
+      <Greet name={"terrence"} isLoggedIn={true} />
     </div>
   );
 }

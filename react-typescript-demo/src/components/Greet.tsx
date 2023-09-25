@@ -1,11 +1,11 @@
 // Specify the types for each property in the props
 type GreetProps = {
   name: string;
-  messageCount: number;
+  messageCount?: number;
   isLoggedIn: boolean;
 };
 
-function Greet({ name, messageCount, isLoggedIn }: GreetProps) {
+function Greet({ name, messageCount = 0, isLoggedIn }: GreetProps) {
   return (
     <div>
       <h2>
