@@ -7,3 +7,7 @@ Specify a type alias that assigns types for each property in the prop being pass
 ## Union Types
 
 If you are trying to conditional render something based on a prop, and that prop can only be certain values, then using union types with string literals is useful. This forces react to only accepts the specified string literals when the prop gets passed down.
+
+## Event Props
+
+Passing event handlers as props is essentially the same, except that we specify these handlers as function types. If we want to use the event object, we specify that as React.MouseEvent<HTMLButtonElement> or React.ChangeEvent<HTMLInputElement> depending on an onClick or onChange event.

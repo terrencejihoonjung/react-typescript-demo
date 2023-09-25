@@ -4,8 +4,9 @@
 // import Status from "./components/Status";
 // import Heading from "./components/Heading";
 // import Oscar from "./components/Oscar";
-import Button from "./components/Button";
-import Input from "./components/Input";
+// import Button from "./components/Button";
+// import Input from "./components/Input";
+import Container from "./components/Container";
 
 function App() {
   // const personName = {
@@ -19,20 +20,11 @@ function App() {
   //   { first: "Princess", last: "Diana" },
   // ];
 
+  const styles = { border: "1px solid black", padding: "1rem" };
+
   return (
     <div>
-      <Button
-        handleClick={(e, id) => {
-          console.log("Button clicked", e.target, id);
-        }}
-      />
-
-      <Input
-        value=""
-        handleChange={(e) => {
-          console.log("Input Changed", e.target.value);
-        }}
-      />
+      <Container styles={styles} />
     </div>
   );
 }
