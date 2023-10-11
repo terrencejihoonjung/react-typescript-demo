@@ -10,13 +10,14 @@
 // import Private from "./components/auth/Private";
 // import Profile from "./components/auth/Profile";
 // import List from "./components/generics/List";
-import RandomNumber from "./components/ref/restriction/RandomNumber";
+// import RandomNumber from "./components/ref/restriction/RandomNumber";
+import Toast from "./components/template-literals/Toast";
 
 function App() {
   // If isPositive is true, then isNegative must be false
   return (
     <div>
-      <RandomNumber value={10} isPositive />
+      <Toast position="center" />
     </div>
   );
 }
