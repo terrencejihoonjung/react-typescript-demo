@@ -11,13 +11,16 @@
 // import Profile from "./components/auth/Profile";
 // import List from "./components/generics/List";
 // import RandomNumber from "./components/ref/restriction/RandomNumber";
-import Toast from "./components/template-literals/Toast";
+// import Toast from "./components/template-literals/Toast";
+import CustomButton from "./components/html/Button";
 
 function App() {
   // If isPositive is true, then isNegative must be false
   return (
     <div>
-      <Toast position="center" />
+      <CustomButton variant="primary" onClick={() => console.log("clicked")}>
+        Primary
+      </CustomButton>
     </div>
   );
 }
