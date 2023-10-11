@@ -9,22 +9,14 @@
 // import Container from "./components/Container";
 // import Private from "./components/auth/Private";
 // import Profile from "./components/auth/Profile";
-import List from "./components/generics/List";
-type Person = {
-  id: number;
-  name: string;
-};
+// import List from "./components/generics/List";
+import RandomNumber from "./components/ref/restriction/RandomNumber";
 
 function App() {
-  const people: Person[] = [
-    { id: 1, name: "Batman" },
-    { id: 2, name: "Superman" },
-    { id: 3, name: "Wonder Woman" },
-  ];
-
+  // If isPositive is true, then isNegative must be false
   return (
     <div>
-      <List<Person> items={people} onClick={(item) => console.log(item)} />
+      <RandomNumber value={10} isPositive />
     </div>
   );
 }
